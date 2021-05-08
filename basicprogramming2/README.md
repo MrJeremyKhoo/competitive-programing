@@ -1,7 +1,7 @@
 Basicprogramming2
 chose to sort the list because noticed that problems easier solved with sorting
 # Case 1
-no need look for duplicates since sum is odd number in is integers. solution involves and depends on mergesort O(nlogn). Faster solution involves looking for compliment of 7777 - i as a set is built such would have time complexity of O(n). O(n^2) solution to "find exsistance of pair that sum to ..." is not accepted
+no need look for duplicates since sum is odd number in is integers. solution involves and depends on mergesort O(nlogn). Faster solution involves looking for compliment(7777-1) in a set of numbers in arrayO(n). O(n^2) solution to "find exsistance of pair that sum to ..." is not accepted
 # Case 2
 since sorted just look at elements next to each other. O(n)
 # Case 3
