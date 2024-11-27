@@ -1,0 +1,41 @@
+Bear Limak wants to become the largest of bears, or at least to become larger than his brother Bob.
+
+Right now, Limak and Bob weigh a and b respectively. It's guaranteed that Limak's weight is smaller than or equal to his brother's weight.
+
+Limak eats a lot and his weight is tripled after every year, while Bob's weight is doubled after every year.
+
+After how many full years will Limak become strictly larger (strictly heavier) than Bob?
+
+Input
+The only line of the input contains two integers a and b (1 less than or equals to a less than or equals to b less than or equals to 10) — the weight of Limak and the weight of Bob respectively.
+
+Output
+Print one integer, denoting the integer number of years after which Limak will become strictly larger than Bob.
+
+
+Limak - a
+Bob - b
+
+they both grow at different rates
+
+2 solutions:
+brute force. do a while loop and loop until Limak weight exceed Bob.
+O(n)
+
+Find intesection of the growth graph:
+Limak = 3*(years)*(initial weight) 
+Bob = 2*(years)*(initial weight) 
+
+Solve for years when Limak >= Bob:
+
+Limak >= Bob
+
+3^(years)*a >= 2^(years)*b
+
+years > ln(b/a) / ln(3/2)
+
+*Note
+But looking for more than not equals to:
+Check if years is whole numeber. add 1 if it is whole number because folloing year, Limak will weigh more
+
+O(1)
