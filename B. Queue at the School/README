@@ -1,0 +1,59 @@
+" Problem: Queue at the School
+
+" Constraints:
+" Time limit per test: 2 seconds
+" Memory limit per test: 256 megabytes
+
+" Description:
+" During the break, schoolchildren (boys and girls) form a queue of n people in the canteen. 
+" Initially, the children are ordered based on when they entered the canteen. 
+" However, boys feel awkward standing in front of girls and start letting the girls move 
+" forward, causing the queue to rearrange each second.
+
+" Process:
+" - Each second, if a boy ('B') stands directly in front of a girl ('G') in the queue, 
+"   they swap places.
+" - This process repeats for t seconds, or until no more swaps are possible.
+
+" Input:
+" 1. The first line contains two integers, n and t (1 ≤ n, t ≤ 50), where:
+"    - n is the number of children in the queue.
+"    - t is the time (in seconds) after which the queue stops rearranging.
+" 2. The second line contains a string s of length n, which represents the initial arrangement 
+"    of the children in the queue:
+"    - 'B': Boy.
+"    - 'G': Girl.
+
+" Output:
+" - A single string a describing the arrangement of the queue after t seconds.
+
+" Examples:
+
+" Example 1:
+" Input:
+" 5 1
+" BGGBG
+" Output:
+" GBGGB
+
+" Example 2:
+" Input:
+" 5 2
+" BGGBG
+" Output:
+" GGBGB
+
+" Example 3:
+" Input:
+" 4 1
+" GGGB
+" Output:
+" GGGB
+
+" Notes:
+" - Boys ('B') and girls ('G') swap positions only if a boy is directly in front of a girl.
+" - The process continues for t seconds or until no swaps are possible during a given second.
+
+Approach
+One outer loop to loop time and one inner loop to go through the queue and swap boys and girls
+

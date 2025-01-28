@@ -1,0 +1,88 @@
+o##r Division
+
+" Constraints:
+" Time limit per test: 2 seconds
+" Memory limit per test: 256 megabytes
+
+" Description:
+" Alice and Bob received n candies from their parents. Each candy weighs either 1 gram 
+" or 2 grams. They want to divide all candies among themselves fairly so that the total 
+" weight of Alice's candies is equal to the total weight of Bob's candies.
+"
+" Check if they can do that. 
+" Note that candies are not allowed to be cut in half.
+
+" Input:
+" 1. The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.
+" 2. For each test case:
+"    - The first line contains an integer n (1 ≤ n ≤ 100) — the number of candies Alice 
+"      and Bob received.
+"    - The second line contains n integers a1, a2, ..., an — the weights of the candies 
+"      (either 1 or 2 grams).
+"
+" It is guaranteed that the sum of n over all test cases does not exceed 10^5.
+
+" Output:
+" For each test case, output "YES" if all candies can be divided into two sets with the 
+" same total weight, otherwise output "NO".
+" The output can be in any case (e.g., "YES", "yes", "Yes").
+
+" Examples:
+
+" Example 1:
+" Input:
+" 5
+" 2
+" 1 1
+" 2
+" 1 2
+" 4
+" 1 2 1 2
+" 3
+" 2 2 2
+" 3
+" 2 1 2
+" Output:
+" YES
+" NO
+" YES
+" NO
+" NO
+
+" Notes:
+" - In the first test case, Alice and Bob can each take one candy, so both will have a 
+"   total weight of 1.
+" - In the second test case, any division will be unfair.
+" - In the third test case, both Alice and Bob can take two candies, one of weight 1 and 
+"   one of weight 2.
+" - In the fourth test case, it is impossible to divide three identical candies between 
+"   two people.
+" - In the fifth test case, any division will also be unfair.
+
+Approach:
+Identify yes case or no case
+
+In no case:
+Only when there are odd number of 2s and odd number of 1s then we cannot divide.
+
+In yes case:
+x = no. 1s
+y = no. 2s
+
+
+that means 
+
+x % 2 = 0
+and 
+y % 2 = 0
+
+or 
+
+x % 2 = 1
+and 
+y % 2 = 0
+y > 0
+
+
+
+
