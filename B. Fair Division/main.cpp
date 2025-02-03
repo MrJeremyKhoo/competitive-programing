@@ -18,7 +18,7 @@ int main() {
         } 
         count2++;
       }
-      if (count2 % 2 != 0 && count1 % 2 != 0 && count1 > 0) {
+      if ((count2 % 2 == 1 && count1 == 0 ) || (count1 % 2 == 1 && count2 % 2 == 0) || (count2 % 2 == 1 && count1 % 2 == 1) ) {
         cout << "NO" << endl;
         continue;
       }

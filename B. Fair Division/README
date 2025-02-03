@@ -30,8 +30,7 @@ o##r Division
 " Examples:
 
 " Example 1:
-" Input:
-" 5
+q
 " 2
 " 1 1
 " 2
@@ -63,26 +62,29 @@ Approach:
 Identify yes case or no case
 
 In no case:
-Only when there are odd number of 2s and odd number of 1s then we cannot divide.
+there are only 3 cases
 
-In yes case:
-x = no. 1s
-y = no. 2s
+There is a 2g candy leftover and zero 1 candy:
+  then num2gCandy % 2 = 1
+  num1gCandy % 2 = 0
 
+there is a 1g candy leftover:
+  then num2gCandy % 2 = 0
+  num1gCandy % 2 = 1
 
-that means 
+there is a 2g and 1g candy leftover:
+  then num2gCandy % 2 = 1
+  num1gCandy % 2 = 1
 
-x % 2 = 0
-and 
-y % 2 = 0
+in yes case:
+There is even 2g and 1g:
+  num2gCandy % 2 = 0
+  num1gCandy % 2 = 0
 
-or 
-
-x % 2 = 1
-and 
-y % 2 = 0
-y > 0
-
+There is odd 2g and even 1g and 1g more than zero:
+  num2gCandy % 2 = 1
+  num1gCandy % 2 = 0
+  num1gCandy > 0
 
 
 
